@@ -17,9 +17,10 @@ static const GLuint WIDTH = 800, HEIGHT = 600;
 // Shaders
 static const GLchar* vertexShaderSource = "#version 330 core\n"
 "layout (location = 0) in vec3 position;\n"
+"uniform float xOffset;\n"
 "void main()\n"
 "{\n"
-"gl_Position = vec4(position.x, position.y, position.z, 1.0);\n"
+"gl_Position = vec4(position.x+xOffset, position.y, position.z, 1.0);\n"
 "}\0";
 static const GLchar* fragmentShaderSource = "#version 330 core\n"
 "out vec4 color;\n"
@@ -100,9 +101,9 @@ int hello_triangle_main()
         glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
         std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
     }
+    
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
-    
     
     // Set up vertex data (and buffer(s)) and attribute pointers
     //GLfloat vertices[] = {
@@ -162,6 +163,11 @@ int hello_triangle_main()
         
         // Draw our first triangle
         glUseProgram(shaderProgram);
+        
+        //通过设置 片段顶点着色器里面的Uniform变量来使渲染往右边平移0.5
+        float offset = 0.5f;
+        glUniform1f(glGetUniformLocation(shaderProgram, "xOffset"), offset);
+        
         glBindVertexArray(VAO);
         //glDrawArrays(GL_TRIANGLES, 0, 6);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);

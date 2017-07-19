@@ -22,6 +22,7 @@
 		78E245CE1F1E38240003C898 /* awesomeface.png in Copy Files */ = {isa = PBXBuildFile; fileRef = 78E245CD1F1E38040003C898 /* awesomeface.png */; };
 		78E245D11F1E3C850003C898 /* 4.2.texture.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78E245CF1F1E3C6D0003C898 /* 4.2.texture.fs */; };
 		78E245D21F1E3C850003C898 /* 4.2.texture.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78E245D01F1E3C6D0003C898 /* 4.2.texture.vs */; };
+		78E2464A1F1F89370003C898 /* Shaders_interpolation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78E246481F1F89370003C898 /* Shaders_interpolation.cpp */; };
 		78FF34351EF26F3800FF6218 /* Hellow_glew.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78FF34331EF26F3800FF6218 /* Hellow_glew.cpp */; };
 		78FF34381EF26FEA00FF6218 /* Hello_triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78FF34361EF26FEA00FF6218 /* Hello_triangle.cpp */; };
 /* End PBXBuildFile section */
@@ -54,7 +55,6 @@
 		7819D6321F0B98B9005BC67E /* glad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glad.h; sourceTree = "<group>"; };
 		7819D6341F0B98B9005BC67E /* khrplatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = khrplatform.h; sourceTree = "<group>"; };
 		7819D6361F0B98B9005BC67E /* glad.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
-		7819D6371F0B9AA2005BC67E /* shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
 		7819D6391F0B9C92005BC67E /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		7819D63A1F0B9C92005BC67E /* common.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
 		7819D63C1F0B9C92005BC67E /* _features.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = _features.hpp; sourceTree = "<group>"; };
@@ -332,6 +332,9 @@
 		78E245CD1F1E38040003C898 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 		78E245CF1F1E3C6D0003C898 /* 4.2.texture.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.2.texture.fs; sourceTree = "<group>"; };
 		78E245D01F1E3C6D0003C898 /* 4.2.texture.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.2.texture.vs; sourceTree = "<group>"; };
+		78E246481F1F89370003C898 /* Shaders_interpolation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shaders_interpolation.cpp; sourceTree = "<group>"; };
+		78E246491F1F89370003C898 /* Shaders_interpolation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shaders_interpolation.hpp; sourceTree = "<group>"; };
+		78E2464C1F1F89C00003C898 /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
 		78FF34331EF26F3800FF6218 /* Hellow_glew.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Hellow_glew.cpp; sourceTree = "<group>"; };
 		78FF34341EF26F3800FF6218 /* Hellow_glew.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hellow_glew.hpp; sourceTree = "<group>"; };
 		78FF34361EF26FEA00FF6218 /* Hello_triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Hello_triangle.cpp; sourceTree = "<group>"; };
@@ -756,8 +759,9 @@
 		781B91701EF262BC001E60B3 /* Hellow_glew */ = {
 			isa = PBXGroup;
 			children = (
+				78E2464B1F1F89AA0003C898 /* Shader_wrapper */,
+				78E246471F1F88C40003C898 /* shader_interpolation */,
 				7819D7461F0BA424005BC67E /* texture */,
-				7819D6371F0B9AA2005BC67E /* shader.h */,
 				78FF34331EF26F3800FF6218 /* Hellow_glew.cpp */,
 				78FF34341EF26F3800FF6218 /* Hellow_glew.hpp */,
 				78FF34361EF26FEA00FF6218 /* Hello_triangle.cpp */,
@@ -775,6 +779,24 @@
 				781B91791EF262F3001E60B3 /* GLKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78E246471F1F88C40003C898 /* shader_interpolation */ = {
+			isa = PBXGroup;
+			children = (
+				78E246481F1F89370003C898 /* Shaders_interpolation.cpp */,
+				78E246491F1F89370003C898 /* Shaders_interpolation.hpp */,
+			);
+			name = shader_interpolation;
+			path = shader;
+			sourceTree = "<group>";
+		};
+		78E2464B1F1F89AA0003C898 /* Shader_wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				78E2464C1F1F89C00003C898 /* shader.h */,
+			);
+			path = Shader_wrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -837,6 +859,7 @@
 				7819D7451F0B9EB8005BC67E /* glad.c in Sources */,
 				780993E71F0F93E1003F58CF /* TextureCombine.cpp in Sources */,
 				781B91721EF262BC001E60B3 /* main.cpp in Sources */,
+				78E2464A1F1F89370003C898 /* Shaders_interpolation.cpp in Sources */,
 				7819D74D1F0BA563005BC67E /* Texture_01.cpp in Sources */,
 				78FF34381EF26FEA00FF6218 /* Hello_triangle.cpp in Sources */,
 				78FF34351EF26F3800FF6218 /* Hellow_glew.cpp in Sources */,

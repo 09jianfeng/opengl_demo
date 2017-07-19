@@ -3,13 +3,15 @@
 #include "Hello_triangle.hpp"
 #include "Texture_01.hpp"
 #include "TextureCombine.hpp"
+#include "Shaders_interpolation.hpp"
 
 // The MAIN function, from here we start the application and run the game loop
 int main()
 {
-    //Hellow_glew_main();
+//    Hellow_glew_main();
 //    hello_triangle_main();
 //    texture_main();
     combine_main();
+//    shader_main();
     return 0;
 }
