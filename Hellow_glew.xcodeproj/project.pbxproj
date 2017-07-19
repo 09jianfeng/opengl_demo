@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780993E71F0F93E1003F58CF /* TextureCombine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 780993E51F0F93E1003F58CF /* TextureCombine.cpp */; };
 		7819D61C1F0B8DB5005BC67E /* std_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7819D61B1F0B8DB5005BC67E /* std_image.cpp */; };
 		7819D6221F0B8FDE005BC67E /* container.jpg in Copy Files */ = {isa = PBXBuildFile; fileRef = 7819D61E1F0B8E16005BC67E /* container.jpg */; };
 		7819D7451F0B9EB8005BC67E /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 7819D6361F0B98B9005BC67E /* glad.c */; };
@@ -18,6 +19,9 @@
 		781B917C1EF262F8001E60B3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781B917B1EF262F8001E60B3 /* OpenGL.framework */; };
 		781B917E1EF2664D001E60B3 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 781B917D1EF2664D001E60B3 /* libGLEW.2.0.0.dylib */; };
 		781B91801EF266DE001E60B3 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 781B917F1EF266DE001E60B3 /* libglfw.3.2.dylib */; };
+		78E245CE1F1E38240003C898 /* awesomeface.png in Copy Files */ = {isa = PBXBuildFile; fileRef = 78E245CD1F1E38040003C898 /* awesomeface.png */; };
+		78E245D11F1E3C850003C898 /* 4.2.texture.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78E245CF1F1E3C6D0003C898 /* 4.2.texture.fs */; };
+		78E245D21F1E3C850003C898 /* 4.2.texture.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78E245D01F1E3C6D0003C898 /* 4.2.texture.vs */; };
 		78FF34351EF26F3800FF6218 /* Hellow_glew.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78FF34331EF26F3800FF6218 /* Hellow_glew.cpp */; };
 		78FF34381EF26FEA00FF6218 /* Hello_triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78FF34361EF26FEA00FF6218 /* Hello_triangle.cpp */; };
 /* End PBXBuildFile section */
@@ -29,6 +33,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				78E245D11F1E3C850003C898 /* 4.2.texture.fs in Copy Files */,
+				78E245D21F1E3C850003C898 /* 4.2.texture.vs in Copy Files */,
+				78E245CE1F1E38240003C898 /* awesomeface.png in Copy Files */,
 				7819D7491F0BA4F0005BC67E /* 4.1.texture.fs in Copy Files */,
 				7819D74A1F0BA4F0005BC67E /* 4.1.texture.vs in Copy Files */,
 				7819D6221F0B8FDE005BC67E /* container.jpg in Copy Files */,
@@ -39,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		780993E51F0F93E1003F58CF /* TextureCombine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureCombine.cpp; sourceTree = "<group>"; };
+		780993E61F0F93E1003F58CF /* TextureCombine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TextureCombine.hpp; sourceTree = "<group>"; };
 		7819D61A1F0B8D20005BC67E /* std_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = std_image.h; sourceTree = "<group>"; };
 		7819D61B1F0B8DB5005BC67E /* std_image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = std_image.cpp; sourceTree = "<group>"; };
 		7819D61E1F0B8E16005BC67E /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
@@ -320,6 +329,9 @@
 		781B917B1EF262F8001E60B3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		781B917D1EF2664D001E60B3 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
 		781B917F1EF266DE001E60B3 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		78E245CD1F1E38040003C898 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		78E245CF1F1E3C6D0003C898 /* 4.2.texture.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.2.texture.fs; sourceTree = "<group>"; };
+		78E245D01F1E3C6D0003C898 /* 4.2.texture.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.2.texture.vs; sourceTree = "<group>"; };
 		78FF34331EF26F3800FF6218 /* Hellow_glew.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Hellow_glew.cpp; sourceTree = "<group>"; };
 		78FF34341EF26F3800FF6218 /* Hellow_glew.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hellow_glew.hpp; sourceTree = "<group>"; };
 		78FF34361EF26FEA00FF6218 /* Hello_triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Hello_triangle.cpp; sourceTree = "<group>"; };
@@ -355,6 +367,7 @@
 		7819D61D1F0B8E16005BC67E /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				78E245CD1F1E38040003C898 /* awesomeface.png */,
 				7819D61E1F0B8E16005BC67E /* container.jpg */,
 			);
 			path = resource;
@@ -708,10 +721,14 @@
 		7819D7461F0BA424005BC67E /* texture */ = {
 			isa = PBXGroup;
 			children = (
+				78E245CF1F1E3C6D0003C898 /* 4.2.texture.fs */,
+				78E245D01F1E3C6D0003C898 /* 4.2.texture.vs */,
 				7819D7471F0BA424005BC67E /* 4.1.texture.fs */,
 				7819D7481F0BA424005BC67E /* 4.1.texture.vs */,
 				7819D74B1F0BA563005BC67E /* Texture_01.cpp */,
 				7819D74C1F0BA563005BC67E /* Texture_01.hpp */,
+				780993E51F0F93E1003F58CF /* TextureCombine.cpp */,
+				780993E61F0F93E1003F58CF /* TextureCombine.hpp */,
 			);
 			path = texture;
 			sourceTree = "<group>";
@@ -818,6 +835,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7819D7451F0B9EB8005BC67E /* glad.c in Sources */,
+				780993E71F0F93E1003F58CF /* TextureCombine.cpp in Sources */,
 				781B91721EF262BC001E60B3 /* main.cpp in Sources */,
 				7819D74D1F0BA563005BC67E /* Texture_01.cpp in Sources */,
 				78FF34381EF26FEA00FF6218 /* Hello_triangle.cpp in Sources */,
