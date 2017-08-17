@@ -22,6 +22,9 @@
 		783822B61F3C8EF000A2BB91 /* 5.1.transform.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 783822B41F3C8EE000A2BB91 /* 5.1.transform.fs */; };
 		783822B71F3C8EF000A2BB91 /* 5.1.transform.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 783822B51F3C8EE000A2BB91 /* 5.1.transform.vs */; };
 		783822B81F3C8F0B00A2BB91 /* Transformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783822B21F3C8EB100A2BB91 /* Transformations.cpp */; };
+		78942A071F4530ED00F574F6 /* Coordinate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78942A051F4530ED00F574F6 /* Coordinate.cpp */; };
+		78942A0A1F456BC100F574F6 /* 5.3.coordinate.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78942A081F4534FA00F574F6 /* 5.3.coordinate.fs */; };
+		78942A0B1F456BC100F574F6 /* 5.3.coordinate.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78942A091F4534FA00F574F6 /* 5.3.coordinate.vs */; };
 		78E245CE1F1E38240003C898 /* awesomeface.png in Copy Files */ = {isa = PBXBuildFile; fileRef = 78E245CD1F1E38040003C898 /* awesomeface.png */; };
 		78E245D11F1E3C850003C898 /* 4.2.texture.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78E245CF1F1E3C6D0003C898 /* 4.2.texture.fs */; };
 		78E245D21F1E3C850003C898 /* 4.2.texture.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78E245D01F1E3C6D0003C898 /* 4.2.texture.vs */; };
@@ -37,6 +40,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				78942A0A1F456BC100F574F6 /* 5.3.coordinate.fs in Copy Files */,
+				78942A0B1F456BC100F574F6 /* 5.3.coordinate.vs in Copy Files */,
 				783822B61F3C8EF000A2BB91 /* 5.1.transform.fs in Copy Files */,
 				783822B71F3C8EF000A2BB91 /* 5.1.transform.vs in Copy Files */,
 				78E245D11F1E3C850003C898 /* 4.2.texture.fs in Copy Files */,
@@ -338,6 +343,10 @@
 		783822B31F3C8EB100A2BB91 /* Transformations.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Transformations.hpp; sourceTree = "<group>"; };
 		783822B41F3C8EE000A2BB91 /* 5.1.transform.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.1.transform.fs; sourceTree = "<group>"; };
 		783822B51F3C8EE000A2BB91 /* 5.1.transform.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.1.transform.vs; sourceTree = "<group>"; };
+		78942A051F4530ED00F574F6 /* Coordinate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Coordinate.cpp; sourceTree = "<group>"; };
+		78942A061F4530ED00F574F6 /* Coordinate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Coordinate.hpp; sourceTree = "<group>"; };
+		78942A081F4534FA00F574F6 /* 5.3.coordinate.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.3.coordinate.fs; sourceTree = "<group>"; };
+		78942A091F4534FA00F574F6 /* 5.3.coordinate.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.3.coordinate.vs; sourceTree = "<group>"; };
 		78E245CD1F1E38040003C898 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 		78E245CF1F1E3C6D0003C898 /* 4.2.texture.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.2.texture.fs; sourceTree = "<group>"; };
 		78E245D01F1E3C6D0003C898 /* 4.2.texture.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.2.texture.vs; sourceTree = "<group>"; };
@@ -768,6 +777,7 @@
 		781B91701EF262BC001E60B3 /* Hellow_glew */ = {
 			isa = PBXGroup;
 			children = (
+				78942A041F4530CC00F574F6 /* coordinate */,
 				783822B11F3C8EB100A2BB91 /* transform */,
 				78E2464B1F1F89AA0003C898 /* Shader_wrapper */,
 				78E246471F1F88C40003C898 /* shader_interpolation */,
@@ -800,6 +810,17 @@
 				783822B31F3C8EB100A2BB91 /* Transformations.hpp */,
 			);
 			path = transform;
+			sourceTree = "<group>";
+		};
+		78942A041F4530CC00F574F6 /* coordinate */ = {
+			isa = PBXGroup;
+			children = (
+				78942A081F4534FA00F574F6 /* 5.3.coordinate.fs */,
+				78942A091F4534FA00F574F6 /* 5.3.coordinate.vs */,
+				78942A051F4530ED00F574F6 /* Coordinate.cpp */,
+				78942A061F4530ED00F574F6 /* Coordinate.hpp */,
+			);
+			path = coordinate;
 			sourceTree = "<group>";
 		};
 		78E246471F1F88C40003C898 /* shader_interpolation */ = {
@@ -884,6 +905,7 @@
 				78E2464A1F1F89370003C898 /* Shaders_interpolation.cpp in Sources */,
 				7819D74D1F0BA563005BC67E /* Texture_01.cpp in Sources */,
 				78FF34381EF26FEA00FF6218 /* Hello_triangle.cpp in Sources */,
+				78942A071F4530ED00F574F6 /* Coordinate.cpp in Sources */,
 				78FF34351EF26F3800FF6218 /* Hellow_glew.cpp in Sources */,
 				7819D61C1F0B8DB5005BC67E /* std_image.cpp in Sources */,
 			);
