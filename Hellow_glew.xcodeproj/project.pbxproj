@@ -777,6 +777,7 @@
 		781B91701EF262BC001E60B3 /* Hellow_glew */ = {
 			isa = PBXGroup;
 			children = (
+				78942A0C1F4578DC00F574F6 /* camera */,
 				78942A041F4530CC00F574F6 /* coordinate */,
 				783822B11F3C8EB100A2BB91 /* transform */,
 				78E2464B1F1F89AA0003C898 /* Shader_wrapper */,
@@ -821,6 +822,13 @@
 				78942A061F4530ED00F574F6 /* Coordinate.hpp */,
 			);
 			path = coordinate;
+			sourceTree = "<group>";
+		};
+		78942A0C1F4578DC00F574F6 /* camera */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = camera;
 			sourceTree = "<group>";
 		};
 		78E246471F1F88C40003C898 /* shader_interpolation */ = {
