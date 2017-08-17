@@ -25,6 +25,9 @@
 		78942A071F4530ED00F574F6 /* Coordinate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78942A051F4530ED00F574F6 /* Coordinate.cpp */; };
 		78942A0A1F456BC100F574F6 /* 5.3.coordinate.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78942A081F4534FA00F574F6 /* 5.3.coordinate.fs */; };
 		78942A0B1F456BC100F574F6 /* 5.3.coordinate.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78942A091F4534FA00F574F6 /* 5.3.coordinate.vs */; };
+		78942A0F1F45AE3F00F574F6 /* 5.4.camera.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78942A0D1F45AE3200F574F6 /* 5.4.camera.fs */; };
+		78942A101F45AE3F00F574F6 /* 5.4.camera.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78942A0E1F45AE3200F574F6 /* 5.4.camera.vs */; };
+		78942A131F45AE6400F574F6 /* opengl_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78942A111F45AE6400F574F6 /* opengl_camera.cpp */; };
 		78E245CE1F1E38240003C898 /* awesomeface.png in Copy Files */ = {isa = PBXBuildFile; fileRef = 78E245CD1F1E38040003C898 /* awesomeface.png */; };
 		78E245D11F1E3C850003C898 /* 4.2.texture.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78E245CF1F1E3C6D0003C898 /* 4.2.texture.fs */; };
 		78E245D21F1E3C850003C898 /* 4.2.texture.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 78E245D01F1E3C6D0003C898 /* 4.2.texture.vs */; };
@@ -40,6 +43,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				78942A0F1F45AE3F00F574F6 /* 5.4.camera.fs in Copy Files */,
+				78942A101F45AE3F00F574F6 /* 5.4.camera.vs in Copy Files */,
 				78942A0A1F456BC100F574F6 /* 5.3.coordinate.fs in Copy Files */,
 				78942A0B1F456BC100F574F6 /* 5.3.coordinate.vs in Copy Files */,
 				783822B61F3C8EF000A2BB91 /* 5.1.transform.fs in Copy Files */,
@@ -347,6 +352,10 @@
 		78942A061F4530ED00F574F6 /* Coordinate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Coordinate.hpp; sourceTree = "<group>"; };
 		78942A081F4534FA00F574F6 /* 5.3.coordinate.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.3.coordinate.fs; sourceTree = "<group>"; };
 		78942A091F4534FA00F574F6 /* 5.3.coordinate.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.3.coordinate.vs; sourceTree = "<group>"; };
+		78942A0D1F45AE3200F574F6 /* 5.4.camera.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.4.camera.fs; sourceTree = "<group>"; };
+		78942A0E1F45AE3200F574F6 /* 5.4.camera.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.4.camera.vs; sourceTree = "<group>"; };
+		78942A111F45AE6400F574F6 /* opengl_camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = opengl_camera.cpp; sourceTree = "<group>"; };
+		78942A121F45AE6400F574F6 /* opengl_camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = opengl_camera.hpp; sourceTree = "<group>"; };
 		78E245CD1F1E38040003C898 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 		78E245CF1F1E3C6D0003C898 /* 4.2.texture.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.2.texture.fs; sourceTree = "<group>"; };
 		78E245D01F1E3C6D0003C898 /* 4.2.texture.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.2.texture.vs; sourceTree = "<group>"; };
@@ -827,6 +836,10 @@
 		78942A0C1F4578DC00F574F6 /* camera */ = {
 			isa = PBXGroup;
 			children = (
+				78942A0D1F45AE3200F574F6 /* 5.4.camera.fs */,
+				78942A0E1F45AE3200F574F6 /* 5.4.camera.vs */,
+				78942A111F45AE6400F574F6 /* opengl_camera.cpp */,
+				78942A121F45AE6400F574F6 /* opengl_camera.hpp */,
 			);
 			path = camera;
 			sourceTree = "<group>";
@@ -914,6 +927,7 @@
 				7819D74D1F0BA563005BC67E /* Texture_01.cpp in Sources */,
 				78FF34381EF26FEA00FF6218 /* Hello_triangle.cpp in Sources */,
 				78942A071F4530ED00F574F6 /* Coordinate.cpp in Sources */,
+				78942A131F45AE6400F574F6 /* opengl_camera.cpp in Sources */,
 				78FF34351EF26F3800FF6218 /* Hellow_glew.cpp in Sources */,
 				7819D61C1F0B8DB5005BC67E /* std_image.cpp in Sources */,
 			);
