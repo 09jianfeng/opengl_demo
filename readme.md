@@ -31,3 +31,6 @@
 
 `brew install glm`
 
+## 或者直接把glew/glfw/glad 放进相关的目录
+
+把 放入 /usr/local/Cellar目录下
