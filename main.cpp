@@ -7,6 +7,8 @@
 #include "Transformations.hpp"
 #include "Coordinate.hpp"
 #include "opengl_camera.hpp"
+#include "Camera.hpp"
+#include "Hello_color.hpp"
 
 // The MAIN function, from here we start the application and run the game loop
 int main()
@@ -18,7 +20,9 @@ int main()
 //    shader_main();
 //    transform_main();
 //    coordiante_main();
-    camera_main();
+//    camera_main();
+//    camera_stander_main();
+    color_main();
     
     return 0;
 }
