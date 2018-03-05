@@ -34,3 +34,7 @@
 ## 或者直接把glew/glfw/glad 放进相关的目录
 
 把 放入 /usr/local/Cellar目录下
+
+# assimp 安装
+模型加载的时候需要用到这个库。
+assimp需要自己去下载源文件，然后用cmake make成xcode工程（cmake 点击configure后，会有error，最后再点击genera手动生成xcode文件），然后再用xcode工程编译成动态库。把生成的动态库也放进 /usr/local/Cellar 目录下，跟 glew/glfw他们一样管理。
