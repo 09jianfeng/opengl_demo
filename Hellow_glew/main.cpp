@@ -10,6 +10,8 @@
 #include "Camera.hpp"
 #include "Hello_color.hpp"
 #include "model_loading.hpp"
+#include "DepthTesting.hpp"
+#include "basic_light.hpp"
 
 // The MAIN function, from here we start the application and run the game loop
 int main()
@@ -23,8 +25,10 @@ int main()
 //    coordiante_main();
 //    camera_main();
 //    camera_stander_main();
-//    color_main();
-    model_loading();
+    color_main();
+//    basicLight_main();
+//    model_loading();
+//    depth_testing_main();
     
     return 0;
 }
