@@ -23,9 +23,9 @@ int main()
 //    shader_main();
 //    transform_main();
 //    coordiante_main();
-//    camera_main();
+    camera_main();
 //    camera_stander_main();
-    color_main();
+//    color_main();
 //    basicLight_main();
 //    model_loading();
 //    depth_testing_main();

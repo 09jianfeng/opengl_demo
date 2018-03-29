@@ -37,4 +37,4 @@
 
 # assimp 安装
 模型加载的时候需要用到这个库。
-assimp需要自己去下载源文件，然后用cmake make成xcode工程（cmake 点击configure后，会有error，最后再点击genera手动生成xcode文件），然后再用xcode工程编译成动态库。把生成的动态库也放进 /usr/local/Cellar 目录下，跟 glew/glfw他们一样管理。
+assimp需要自己去下载源文件，然后用cmake make成xcode工程（cmake 点击configure后，会有error，最后再点击genera手动生成xcode文件），然后再用xcode工程编译成动态库。assimp的动态库有依赖绝对路径，所以每个人都要编译一遍。。。

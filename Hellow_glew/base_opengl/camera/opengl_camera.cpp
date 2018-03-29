@@ -229,7 +229,7 @@ int camera_main(){
         
         // create model  转换为世界空间
         glm::mat4 model;
-        model = glm::rotate(model, (GLfloat)glfwGetTime(), glm::vec3(0.0f, 1.0f, 0.0));
+//        model = glm::rotate(model, (GLfloat)glfwGetTime(), glm::vec3(0.0f, 1.0f, 0.0));
         
         // create view。  转换为观察空间
         /* 视点（摄像机位置），为一个圆圈。通过变换摄像机的位置，观察
@@ -247,6 +247,7 @@ int camera_main(){
         glm::mat4 projection;
         float w_h = 800.0/600.0;
         projection = glm::perspective(45.0f, w_h, 0.1f, 100.0f);
+//        projection = glm::ortho(0.0f, 800.0f, 0.0f, 600.0f, 0.1f, 100.0f);
         
         // more cube
         glm::vec3 cubePositions[] = {
@@ -347,13 +348,13 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
         keys[key] = false;
     
     
-//    GLfloat cameraSpeed = 1.0f;
-//    if(key == GLFW_KEY_W)
-//        cameraPos += cameraSpeed * cameraFront;
-//    if(key == GLFW_KEY_S)
-//        cameraPos -= cameraSpeed * cameraFront;
-//    if(key == GLFW_KEY_A)
-//        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
-//    if(key == GLFW_KEY_D)
-//        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+    GLfloat cameraSpeed = 1.0f;
+    if(key == GLFW_KEY_W)
+        cameraPos += cameraSpeed * cameraFront;
+    if(key == GLFW_KEY_S)
+        cameraPos -= cameraSpeed * cameraFront;
+    if(key == GLFW_KEY_A)
+        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+    if(key == GLFW_KEY_D)
+        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
 }
