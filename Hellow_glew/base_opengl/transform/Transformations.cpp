@@ -1,3 +1,4 @@
+
 //
 //  Transformations.cpp
 //  Hellow_glew
@@ -5,6 +6,12 @@
 //  Created by JFChen on 2017/8/10.
 //  Copyright © 2017年 JFChen. All rights reserved.
 //
+
+/*参考
+ https://blog.csdn.net/wangdingqiaoit/article/details/51383052
+ https://blog.csdn.net/wangdingqiaoit/article/details/51394238
+ */
+
 
 #include "Transformations.hpp"
 #include "glad.h"
