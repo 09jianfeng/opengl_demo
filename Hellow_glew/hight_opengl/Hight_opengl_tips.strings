@@ -1,0 +1,10 @@
+/* 
+  Hight_opengl_tips.strings
+  Hellow_glew
+
+  Created by JFChen on 2018/4/11.
+  Copyright © 2018年 JFChen. All rights reserved.
+*/
+
+一、深度测试
+1、设置好一个平截头体（设置透视矩阵透视矩阵,比如glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);）。 那么深度值Z对应的应该就是 0.1 ～ 100，对应着z值的0～1。是线形对齐的。也就是说 0.1 对应的是0，100对应的是1.但其实不是的。 深度值很大一部分是由很小的z值所决定的，这给了近处的物体很大的深度精度。这个（从观察者的视角）变换z值的方程是嵌入在投影矩阵中的，所以当我们想将一个顶点坐标从观察空间至裁剪空间的时候这个非线性方程就被应用了。

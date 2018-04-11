@@ -22,6 +22,10 @@
 		783822B61F3C8EF000A2BB91 /* 5.1.transform.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 783822B41F3C8EE000A2BB91 /* 5.1.transform.fs */; };
 		783822B71F3C8EF000A2BB91 /* 5.1.transform.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 783822B51F3C8EE000A2BB91 /* 5.1.transform.vs */; };
 		783822B81F3C8F0B00A2BB91 /* Transformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783822B21F3C8EB100A2BB91 /* Transformations.cpp */; };
+		783C4EE8207E0124006D858E /* marble.jpg in Copy Files */ = {isa = PBXBuildFile; fileRef = 783C4EE6207DFED5006D858E /* marble.jpg */; };
+		783C4EE9207E012B006D858E /* metal.png in Copy Files */ = {isa = PBXBuildFile; fileRef = 783C4EE7207DFED6006D858E /* metal.png */; };
+		783C4EEC207E01C5006D858E /* 1.1.depth_testing.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 783C4EEA207E019C006D858E /* 1.1.depth_testing.fs */; };
+		783C4EED207E01C5006D858E /* 1.1.depth_testing.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 783C4EEB207E019C006D858E /* 1.1.depth_testing.vs */; };
 		785CE4CC1F805E63004DD5F1 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 785CE4CA1F805E63004DD5F1 /* Camera.cpp */; };
 		785CE4CF1F8063C7004DD5F1 /* 1.colors.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 782D73E51F61223200745B60 /* 1.colors.fs */; };
 		785CE4D01F8063C7004DD5F1 /* 1.colors.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 782D73E61F61223200745B60 /* 1.colors.vs */; };
@@ -60,6 +64,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				783C4EEC207E01C5006D858E /* 1.1.depth_testing.fs in Copy Files */,
+				783C4EED207E01C5006D858E /* 1.1.depth_testing.vs in Copy Files */,
+				783C4EE9207E012B006D858E /* metal.png in Copy Files */,
+				783C4EE8207E0124006D858E /* marble.jpg in Copy Files */,
 				786356FD205779D400DB826C /* 2.2.basic_lighting.fs in Copy Files */,
 				786356FE205779D400DB826C /* 2.2.basic_lighting.vs in Copy Files */,
 				786356FF205779D400DB826C /* 2.2.lamp.vs in Copy Files */,
@@ -379,6 +387,11 @@
 		783822B31F3C8EB100A2BB91 /* Transformations.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Transformations.hpp; sourceTree = "<group>"; };
 		783822B41F3C8EE000A2BB91 /* 5.1.transform.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.1.transform.fs; sourceTree = "<group>"; };
 		783822B51F3C8EE000A2BB91 /* 5.1.transform.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.1.transform.vs; sourceTree = "<group>"; };
+		783C4EE6207DFED5006D858E /* marble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marble.jpg; sourceTree = "<group>"; };
+		783C4EE7207DFED6006D858E /* metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal.png; sourceTree = "<group>"; };
+		783C4EEA207E019C006D858E /* 1.1.depth_testing.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.1.depth_testing.fs; sourceTree = "<group>"; };
+		783C4EEB207E019C006D858E /* 1.1.depth_testing.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.1.depth_testing.vs; sourceTree = "<group>"; };
+		783C4EF0207E0A7A006D858E /* Hight_opengl_tips.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Hight_opengl_tips.strings; sourceTree = "<group>"; };
 		785CE4CA1F805E63004DD5F1 /* Camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
 		785CE4CB1F805E63004DD5F1 /* Camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
 		785CE4CD1F80639E004DD5F1 /* 1.lamp.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.lamp.vs; sourceTree = "<group>"; };
@@ -892,7 +905,7 @@
 			children = (
 				781B91711EF262BC001E60B3 /* main.cpp */,
 				7885C2E9204CEBD300084617 /* ModelLoad */,
-				7885C2E3204CE85C00084617 /* Depth testing */,
+				783C4EEE207E0A27006D858E /* hight_opengl */,
 				786356F42057738800DB826C /* light */,
 				786356F32057736C00DB826C /* base_opengl */,
 			);
@@ -935,6 +948,15 @@
 			path = transform;
 			sourceTree = "<group>";
 		};
+		783C4EEE207E0A27006D858E /* hight_opengl */ = {
+			isa = PBXGroup;
+			children = (
+				783C4EF0207E0A7A006D858E /* Hight_opengl_tips.strings */,
+				7885C2E3204CE85C00084617 /* Depth testing */,
+			);
+			path = hight_opengl;
+			sourceTree = "<group>";
+		};
 		786356F32057736C00DB826C /* base_opengl */ = {
 			isa = PBXGroup;
 			children = (
@@ -974,6 +996,10 @@
 		7885C2E3204CE85C00084617 /* Depth testing */ = {
 			isa = PBXGroup;
 			children = (
+				783C4EEA207E019C006D858E /* 1.1.depth_testing.fs */,
+				783C4EEB207E019C006D858E /* 1.1.depth_testing.vs */,
+				783C4EE6207DFED5006D858E /* marble.jpg */,
+				783C4EE7207DFED6006D858E /* metal.png */,
 				7885C2E5204CE89D00084617 /* DepthTesting.hpp */,
 				7885C2E4204CE89D00084617 /* DepthTesting.cpp */,
 			);

@@ -28,7 +28,7 @@ int main()
 //    color_main();
 //    basicLight_main();
 //    model_loading();
-//    depth_testing_main();
+    depth_testing_main();
     
     return 0;
 }
