@@ -26,6 +26,10 @@
 		783C4EE9207E012B006D858E /* metal.png in Copy Files */ = {isa = PBXBuildFile; fileRef = 783C4EE7207DFED6006D858E /* metal.png */; };
 		783C4EEC207E01C5006D858E /* 1.1.depth_testing.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 783C4EEA207E019C006D858E /* 1.1.depth_testing.fs */; };
 		783C4EED207E01C5006D858E /* 1.1.depth_testing.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 783C4EEB207E019C006D858E /* 1.1.depth_testing.vs */; };
+		783C4EF4207E1392006D858E /* stencil_testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 783C4EF2207E1392006D858E /* stencil_testing.cpp */; };
+		783C4F05207F352F006D858E /* 2.stencil_testing.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 783C4EF5207E14E0006D858E /* 2.stencil_testing.fs */; };
+		783C4F06207F352F006D858E /* 2.stencil_testing.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 783C4EF8207E14E0006D858E /* 2.stencil_testing.vs */; };
+		783C4F07207F352F006D858E /* 2.stencil_single_color.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 783C4EF6207E14E0006D858E /* 2.stencil_single_color.fs */; };
 		785CE4CC1F805E63004DD5F1 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 785CE4CA1F805E63004DD5F1 /* Camera.cpp */; };
 		785CE4CF1F8063C7004DD5F1 /* 1.colors.fs in Copy Files */ = {isa = PBXBuildFile; fileRef = 782D73E51F61223200745B60 /* 1.colors.fs */; };
 		785CE4D01F8063C7004DD5F1 /* 1.colors.vs in Copy Files */ = {isa = PBXBuildFile; fileRef = 782D73E61F61223200745B60 /* 1.colors.vs */; };
@@ -64,6 +68,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				783C4F05207F352F006D858E /* 2.stencil_testing.fs in Copy Files */,
+				783C4F06207F352F006D858E /* 2.stencil_testing.vs in Copy Files */,
+				783C4F07207F352F006D858E /* 2.stencil_single_color.fs in Copy Files */,
 				783C4EEC207E01C5006D858E /* 1.1.depth_testing.fs in Copy Files */,
 				783C4EED207E01C5006D858E /* 1.1.depth_testing.vs in Copy Files */,
 				783C4EE9207E012B006D858E /* metal.png in Copy Files */,
@@ -392,6 +399,11 @@
 		783C4EEA207E019C006D858E /* 1.1.depth_testing.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.1.depth_testing.fs; sourceTree = "<group>"; };
 		783C4EEB207E019C006D858E /* 1.1.depth_testing.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.1.depth_testing.vs; sourceTree = "<group>"; };
 		783C4EF0207E0A7A006D858E /* Hight_opengl_tips.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Hight_opengl_tips.strings; sourceTree = "<group>"; };
+		783C4EF2207E1392006D858E /* stencil_testing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stencil_testing.cpp; sourceTree = "<group>"; };
+		783C4EF3207E1392006D858E /* stencil_testing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = stencil_testing.hpp; sourceTree = "<group>"; };
+		783C4EF5207E14E0006D858E /* 2.stencil_testing.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 2.stencil_testing.fs; sourceTree = "<group>"; };
+		783C4EF6207E14E0006D858E /* 2.stencil_single_color.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 2.stencil_single_color.fs; sourceTree = "<group>"; };
+		783C4EF8207E14E0006D858E /* 2.stencil_testing.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 2.stencil_testing.vs; sourceTree = "<group>"; };
 		785CE4CA1F805E63004DD5F1 /* Camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
 		785CE4CB1F805E63004DD5F1 /* Camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
 		785CE4CD1F80639E004DD5F1 /* 1.lamp.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.lamp.vs; sourceTree = "<group>"; };
@@ -951,10 +963,23 @@
 		783C4EEE207E0A27006D858E /* hight_opengl */ = {
 			isa = PBXGroup;
 			children = (
+				783C4EF1207E1358006D858E /* stencil_testing */,
+				7885C2E3204CE85C00084617 /* depth testing */,
 				783C4EF0207E0A7A006D858E /* Hight_opengl_tips.strings */,
-				7885C2E3204CE85C00084617 /* Depth testing */,
 			);
 			path = hight_opengl;
+			sourceTree = "<group>";
+		};
+		783C4EF1207E1358006D858E /* stencil_testing */ = {
+			isa = PBXGroup;
+			children = (
+				783C4EF5207E14E0006D858E /* 2.stencil_testing.fs */,
+				783C4EF8207E14E0006D858E /* 2.stencil_testing.vs */,
+				783C4EF6207E14E0006D858E /* 2.stencil_single_color.fs */,
+				783C4EF3207E1392006D858E /* stencil_testing.hpp */,
+				783C4EF2207E1392006D858E /* stencil_testing.cpp */,
+			);
+			path = stencil_testing;
 			sourceTree = "<group>";
 		};
 		786356F32057736C00DB826C /* base_opengl */ = {
@@ -993,7 +1018,7 @@
 			path = basic_light;
 			sourceTree = "<group>";
 		};
-		7885C2E3204CE85C00084617 /* Depth testing */ = {
+		7885C2E3204CE85C00084617 /* depth testing */ = {
 			isa = PBXGroup;
 			children = (
 				783C4EEA207E019C006D858E /* 1.1.depth_testing.fs */,
@@ -1003,7 +1028,7 @@
 				7885C2E5204CE89D00084617 /* DepthTesting.hpp */,
 				7885C2E4204CE89D00084617 /* DepthTesting.cpp */,
 			);
-			path = "Depth testing";
+			path = "depth testing";
 			sourceTree = "<group>";
 		};
 		7885C2E9204CEBD300084617 /* ModelLoad */ = {
@@ -1236,6 +1261,7 @@
 				781B91721EF262BC001E60B3 /* main.cpp in Sources */,
 				78E2464A1F1F89370003C898 /* Shaders_interpolation.cpp in Sources */,
 				7885C327204CF3FD00084617 /* model_loading.cpp in Sources */,
+				783C4EF4207E1392006D858E /* stencil_testing.cpp in Sources */,
 				7819D74D1F0BA563005BC67E /* Texture_01.cpp in Sources */,
 				786356F82057786600DB826C /* basic_light.cpp in Sources */,
 				78FF34381EF26FEA00FF6218 /* Hello_triangle.cpp in Sources */,
