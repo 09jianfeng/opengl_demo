@@ -13,6 +13,8 @@
 #include "DepthTesting.hpp"
 #include "basic_light.hpp"
 #include "stencil_testing.hpp"
+#include "blend_grass.hpp"
+#include "blend_half_alpha.hpp"
 
 // The MAIN function, from here we start the application and run the game loop
 int main()
@@ -30,7 +32,9 @@ int main()
 //    basicLight_main();
 //    model_loading();
 //    depth_testing_main();
-    setncil_main();
+//    setncil_main();
+//    blend_main();
+    blend_half_main();
     
     return 0;
 }
