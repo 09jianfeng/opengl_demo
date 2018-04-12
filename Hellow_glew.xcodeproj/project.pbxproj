@@ -963,9 +963,9 @@
 		783C4EEE207E0A27006D858E /* hight_opengl */ = {
 			isa = PBXGroup;
 			children = (
+				783C4EF0207E0A7A006D858E /* Hight_opengl_tips.strings */,
 				783C4EF1207E1358006D858E /* stencil_testing */,
 				7885C2E3204CE85C00084617 /* depth testing */,
-				783C4EF0207E0A7A006D858E /* Hight_opengl_tips.strings */,
 			);
 			path = hight_opengl;
 			sourceTree = "<group>";

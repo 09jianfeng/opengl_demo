@@ -85,6 +85,7 @@ int setncil_main()
     glDepthFunc(GL_LESS);
     glEnable(GL_STENCIL_TEST);
     glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
+    //GL_REPLACE    将模板值设置为glStencilFunc函数设置的ref值
     glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
     
     // build and compile shaders
@@ -215,7 +216,7 @@ int setncil_main()
         shader.setMat4("projection", projection);
         
         // draw floor as normal, but don't write the floor to the stencil buffer, we only care about the containers. We set its mask to 0x00 to not write to the stencil buffer.
-        glStencilMask(0x00);
+        glStencilMask(0x00); // 每一位在写入模板缓冲时都会变成0（禁用写入）
         // floor
         glBindVertexArray(planeVAO);
         glBindTexture(GL_TEXTURE_2D, floorTexture);
@@ -225,8 +226,8 @@ int setncil_main()
         
         // 1st. render pass, draw objects as normal, writing to the stencil buffer
         // --------------------------------------------------------------------
-        glStencilFunc(GL_ALWAYS, 1, 0xFF);
-        glStencilMask(0xFF);
+        glStencilFunc(GL_ALWAYS, 1, 0xFF); //启用模版缓冲，绘制比较小的模版。跟1比较，全通过。将模板函数设置为GL_ALWAYS，每当物体的片段被渲染时，将模板缓冲更新为1（glStencilOp 这个函数中描述了）。
+        glStencilMask(0xFF); // 每一位写入模板缓冲时都保持原样
         // cubes
         glBindVertexArray(cubeVAO);
         glActiveTexture(GL_TEXTURE0);
@@ -243,9 +244,9 @@ int setncil_main()
         // Because the stencil buffer is now filled with several 1s. The parts of the buffer that are 1 are not drawn, thus only drawing
         // the objects' size differences, making it look like borders.
         // -----------------------------------------------------------------------------------------------------------------------------
-        glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
-        glStencilMask(0x00);
-        glDisable(GL_DEPTH_TEST);
+        glStencilFunc(GL_NOTEQUAL, 1, 0xFF);  //不等于1的通过
+        glStencilMask(0x00); // 每一位在写入模板缓冲时都会变成0（禁用写入）
+        glDisable(GL_DEPTH_TEST); //禁用深度测试
         shaderSingleColor.use();
         float scale = 1.1;
         // cubes
