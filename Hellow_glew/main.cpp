@@ -15,6 +15,7 @@
 #include "stencil_testing.hpp"
 #include "blend_grass.hpp"
 #include "blend_half_alpha.hpp"
+#include "framebuffer.hpp"
 
 // The MAIN function, from here we start the application and run the game loop
 int main()
@@ -34,7 +35,7 @@ int main()
 //    depth_testing_main();
 //    setncil_main();
 //    blend_main();
-    blend_half_main();
-    
+//    blend_half_main();
+    framebuffer_main();
     return 0;
 }
