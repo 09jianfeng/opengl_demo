@@ -36,3 +36,10 @@
 
 1. 把glew、glfw、glad三个文件夹 放入 /usr/local/Cellar目录下
 2. 把glew、glfw、glad三个文件夹 放入/usr/local/opt  并且把glew、glfw、glad目录下的版本文件夹下面的文件全部移动到glew/glfw/glad目录下
+
+把 放入 /usr/local/Cellar目录下
+
+# assimp 安装
+模型加载的时候需要用到这个库。
+
+assimp需要自己去下载源文件，然后用cmake make成xcode工程（cmake 点击configure后，会有error，最后再点击genera手动生成xcode文件），然后再用xcode工程编译成动态库。assimp的动态库有依赖绝对路径，所以每个人都要编译一遍。。。
