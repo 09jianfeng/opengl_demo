@@ -31,6 +31,8 @@
 
 `brew install glm`
 
-## 或者直接把glew/glfw/glad 放进相关的目录
+## 直接用项目上带的静态库
+直接把glew/glfw/glad 放进相关的目录。解压glew/glfw/glad里面的压缩包。得到 glew、glfw、glad三个文件夹
 
-把 放入 /usr/local/Cellar目录下
+1. 把glew、glfw、glad三个文件夹 放入 /usr/local/Cellar目录下
+2. 把glew、glfw、glad三个文件夹 放入/usr/local/opt  并且把glew、glfw、glad目录下的版本文件夹下面的文件全部移动到glew/glfw/glad目录下
