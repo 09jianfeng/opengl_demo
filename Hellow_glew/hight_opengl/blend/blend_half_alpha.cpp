@@ -192,9 +192,9 @@ int blend_half_main()
     
     // load textures
     // -------------
-    unsigned int cubeTexture = loadTexture("marble.jpg");
-    unsigned int floorTexture = loadTexture("metal.png");
-    unsigned int transparentTexture = loadTexture("window.png");
+    unsigned int cubeTexture = loadTexture("resource/marble.jpg");
+    unsigned int floorTexture = loadTexture("resource/metal.png");
+    unsigned int transparentTexture = loadTexture("resource/window.png");
     
     // transparent window locations
     // --------------------------------

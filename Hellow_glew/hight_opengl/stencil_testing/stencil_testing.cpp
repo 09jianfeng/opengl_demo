@@ -176,8 +176,8 @@ int setncil_main()
     
     // load textures
     // -------------
-    unsigned int cubeTexture = loadTexture("marble.jpg");
-    unsigned int floorTexture = loadTexture("metal.png");
+    unsigned int cubeTexture = loadTexture("resource/marble.jpg");
+    unsigned int floorTexture = loadTexture("resource/metal.png");
     
     // shader configuration
     // --------------------

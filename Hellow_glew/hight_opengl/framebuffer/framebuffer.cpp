@@ -190,8 +190,8 @@ int framebuffer_main()
 
     // load textures
     // -------------
-    unsigned int cubeTexture = loadTexture("container.jpg");
-    unsigned int floorTexture = loadTexture("metal.png");
+    unsigned int cubeTexture = loadTexture("resource/container.jpg");
+    unsigned int floorTexture = loadTexture("resource/metal.png");
     
     // shader configuration
     // --------------------

@@ -190,9 +190,9 @@ int blend_main()
     
     // load textures
     // -------------
-    unsigned int cubeTexture = loadTexture("marble.jpg");
-    unsigned int floorTexture = loadTexture("metal.png");
-    unsigned int transparentTexture = loadTexture("grass.png");
+    unsigned int cubeTexture = loadTexture("resource/marble.jpg");
+    unsigned int floorTexture = loadTexture("resource/metal.png");
+    unsigned int transparentTexture = loadTexture("resource/grass.png");
     
     // transparent vegetation locations
     // --------------------------------
