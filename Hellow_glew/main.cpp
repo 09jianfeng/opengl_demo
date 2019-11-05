@@ -36,6 +36,6 @@ int main()
 //    setncil_main();
 //    blend_main();
 //    blend_half_main();
-    framebuffer_main();
+//    framebuffer_main();
     return 0;
 }
